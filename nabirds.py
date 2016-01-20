@@ -4,11 +4,11 @@ import sys
 #from matplotlib import pyplot as plt
 import random
 import math
-try:
-  import networkx as nx
-  has_networkx = True
-except:
-  has_networkx = False
+#try:
+#  import networkx as nx
+#  has_networkx = True
+#except:
+#  has_networkx = False
 
 def load_bounding_box_annotations(dataset_path=''):
   

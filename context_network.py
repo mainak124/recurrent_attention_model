@@ -6,7 +6,7 @@ import sys
 import tarfile
 import tensorflow.python.platform
 import tensorflow as tf
-from create_dataset import get_dataset 
+from create_dataset import get_dataset, load_image_batch, get_data_length 
 
 FLAGS = tf.app.flags.FLAGS
 
@@ -85,15 +85,15 @@ def context_net(x, y_, keep_prob, n_classes):
     
     return cost, out
 
-def train_model(n_epoch = 1000, batch_size = 50, n_classes = 1011, dataset_path = '/home/mainak/datasets/nabirds/birds_train_data_1k.pkl'):
+def train_model(n_epoch = 1000, batch_size = 50, n_classes = 1011, dataset_path = '/raid/mainak/datasets/nabirds/', image_path = 'images'):
 
-    train_set_x, train_set_y_ = get_dataset(dataset_path)
-    train_set_y_ = train_set_y_.astype(int)
-    n_train_batches = train_set_x.shape[0]
-    train_set_y = np.zeros((n_train_batches, n_classes))
-    train_set_y[np.arange(n_train_batches), train_set_y_-1] = 1
-    #train_set_y = dense_to_one_hot(train_set_y_, num_classes=1000)
-    print "train_set_y shape: ", train_set_y.shape
+    #train_set_x, train_set_y_ = get_dataset(dataset_path)
+    #train_set_y_ = train_set_y_.astype(int)
+    #n_train_batches = train_set_x.shape[0]
+    #train_set_y = np.zeros((n_train_batches, n_classes))
+    #train_set_y[np.arange(n_train_batches), train_set_y_-1] = 1
+    #print "train_set_y shape: ", train_set_y.shape
+    n_train_batches, n_test_batches = get_data_length(dataset_path)
     n_train_batches = np.ceil(n_train_batches/batch_size)
     n_train_batches = n_train_batches.astype(int)
     x = tf.placeholder(tf.float32, shape=(None,256,256,3))
@@ -112,11 +112,11 @@ def train_model(n_epoch = 1000, batch_size = 50, n_classes = 1011, dataset_path 
     with sess.as_default():
         for epoch in range(n_epoch):
             for minibatch_index in xrange(n_train_batches):
-                batch = [train_set_x[minibatch_index*batch_size: (minibatch_index+1)*batch_size], 
-                train_set_y[minibatch_index*batch_size: (minibatch_index+1)*batch_size]] 
+                batch_x, batch_y = load_image_batch(dataset_path = dataset_path, image_path = image_path, start_idx=(minibatch_index*batch_size), batch_size = batch_size)
+                #batch = [train_set_x[minibatch_index*batch_size: (minibatch_index+1)*batch_size], 
+                #train_set_y[minibatch_index*batch_size: (minibatch_index+1)*batch_size]] 
+                batch = [batch_x, batch_y]
                 if minibatch_index%100 == 0:
-                    #train_accuracy = accuracy.eval(feed_dict={x:batch[0], y_: batch[1], keep_prob: 1.0})
-                    #train_cost = cost.eval(feed_dict={x:batch[0], y_: batch[1], keep_prob: 1.0})
                     train_accuracy, train_cost = sess.run(fetches=[accuracy, cost], feed_dict={x:batch[0], y_: batch[1], keep_prob: 1.0})
                     print("step %d, minibatch_index %d, train cost %g, training accuracy %g"%(epoch, minibatch_index, train_cost, train_accuracy))
                 train_step.run(feed_dict={x: batch[0], y_: batch[1], keep_prob: 1.0})

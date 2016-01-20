@@ -1,5 +1,4 @@
 import numpy as np
-import theano
 import cv2
 import os
 import sys
@@ -28,6 +27,50 @@ def get_dataset(dataset_path = '/home/mainak/datasets/nabirds/'):
 
 	return train_set_x, train_set_y
 
+def get_data_length(dataset_path = '/home/mainak/datasets/nabirds/'):
+
+    # Load in the train / test split
+    train_images, test_images = load_train_test_split(dataset_path)
+    return len(train_images), len(test_images)
+
+def load_image_batch(start_idx, batch_size, image_path, dataset_path = '/home/mainak/datasets/nabirds/'):
+    
+    image_paths = load_image_paths(dataset_path, path_prefix=image_path)
+    image_class_labels = load_image_labels(dataset_path)
+    
+    # Load in the train / test split
+    train_images, test_images = load_train_test_split(dataset_path)
+    
+    # Visualize the images and their annotations
+    image_identifiers = image_paths.keys()
+    random.shuffle(image_identifiers) 
+    if start_idx == 0:
+        random.shuffle(train_images) 
+    batch_images = train_images[start_idx:start_idx+batch_size]
+    
+    count = 0
+    out_images = []
+    image_labels = []
+
+    for image_id in batch_images:
+	  
+        image_path = image_paths[image_id]
+        image = cv2.imread(image_path, cv2.IMREAD_COLOR)
+        class_label = image_class_labels[image_id]
+        
+        count += 1
+        processed_image = preprocessImage(image)
+        out_images.append(processed_image)
+        image_labels.append(class_label)
+        
+	#out_images_arr = np.transpose(np.asarray(out_images), (0,3,1,2)) # Make it n_images x n_ch x n_row x n_col
+	out_images_arr = np.asarray(out_images) # Make it n_images x n_row x n_col x n_ch
+	image_labels_arr = np.asarray(image_labels)
+	
+	train_batch_x = out_images_arr
+	train_batch_y = image_labels_arr
+
+    return train_batch_x, train_batch_y
 
 if __name__ == '__main__':
   
@@ -40,6 +83,8 @@ if __name__ == '__main__':
     	image_path = sys.argv[2]
     else:
     	image_path  = 'images'
+
+    print "Starting Data Extraction from Datapath: ", dataset_path
     
     # Load in the image data
     # Assumes that the images have been extracted into a directory called "images"
@@ -71,6 +116,8 @@ if __name__ == '__main__':
     count = 0
     out_images = []
     image_labels = []
+
+    print "Start storing the images in pickle file"
     
     for image_id in image_identifiers:
 	  
@@ -87,12 +134,10 @@ if __name__ == '__main__':
         out_images.append(processed_image)
         image_labels.append(class_label)
         
-        if np.mod(count, 100) == 0:
+        if np.mod(count, 10) == 0:
             print "Count: ", count
         #if count > 10000:
         #    break
-        if count > 10000:
-        	break
 
 	#out_images_arr = np.transpose(np.asarray(out_images), (0,3,1,2)) # Make it n_images x n_ch x n_row x n_col
 	out_images_arr = np.asarray(out_images) # Make it n_images x n_row x n_col x n_ch
