@@ -323,8 +323,8 @@ def emission_net(x, keep_params=1):
         var_list_3 += params_emission
     #converting coordinates to pixel levels
     #output = tf.floor(out*ratio*image_size/2)+image_size/2
-    output = tf.floor(tf.sigmoid(output)*image_size)
-    #return params_emission, output    
+    #output = tf.floor(tf.sigmoid(output)*image_size) # FIXME: tanh or sigmoid?
+    output = tf.floor((tf.tanh(output)*(image_size/2)) + (image_size/2))
     return output
 
 def sample_location(n_sample, mean):
@@ -558,7 +558,7 @@ def train_net(dataset_path = '/raid/mainak/datasets/nabirds/', image_path = 'ima
                 feed_dict={x:batch[0], y_:batch[1],is_train:0, keep_prob:0.5}
 
                 class_cost_v, locs_cost_v, reward_v, accuracy_v, loc_mean_v, train_ops_v = sess.run(fetches=[class_cost, locs_cost, reward, accuracy, loc_mean, train_ops[-1]], feed_dict=feed_dict)
-                print ("minibatch_idx: %d, class cost: %g, locs_cost: %g"%(minibatch_index, class_cost_v, locs_cost_v))
+                print ("minibatch_idx: %d, class cost: %g, locs_cost: %g, accuracy: %g"%(minibatch_index, class_cost_v, locs_cost_v, accuracy_v))
                 print "Reward: ", reward_v
                 print "Locations: ", loc_mean_v[:,1,:]
 
