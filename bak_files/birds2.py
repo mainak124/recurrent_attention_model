@@ -41,21 +41,18 @@ context_net_type = "alex"
 #context_net_type = "3-layer"
 #image_size  = 227
 image_size  = 227 if context_net_type == "alex" else 256
-num_step = 5
+num_step = 1
 lambda_reward = 0.7
 n_sample = 10
 n_classes = 555
-stddev = 15
+stddev = 40
 global_step = 0
-#l2_decay = 0.0001
-l2_decay = 0.0
+l2_decay = 0.0001
 batch_size = 64
 dis_reward = 0.9
 n_epoch = 100
-lr = 0.1
+lr = 0.02
 glimpse_size = 32
-
-#baseline = num_step*[0]
 
 conv_counter = 1
 pool_counter = 1
@@ -276,19 +273,16 @@ def glimpse_net(x, locs, keep_prob, is_train, sample_idx): #, glimpse_size=16):
     var_list_2 += params_glimpse
     return tf.mul(fc_image,fc_loc)
     
-def rnn_net(x, cell=None, layer=None, prev_state=None, is_train=1, keep_prob=0.8):
+def rnn_net(x, layer=None, prev_state=None, is_train=1, keep_prob=0.8):
 
     global lstm_state_size
     global rnn_dim
 
-    if prev_state==None:   
-        lstm_cell = rnn_cell.BasicLSTMCell(rnn_dim, forget_bias=0.2)
-        if is_train and keep_prob < 1:
-            lstm_cell = rnn_cell.DropoutWrapper(lstm_cell, output_keep_prob=keep_prob)
-        else:    
-            lstm_cell *= keep_prob
-    else:
-        lstm_cell = cell        
+    lstm_cell = rnn_cell.BasicLSTMCell(rnn_dim, forget_bias=0.2)
+    if is_train and keep_prob < 1:
+        lstm_cell = rnn_cell.DropoutWrapper(lstm_cell, output_keep_prob=keep_prob)
+    else:    
+        lstm_cell *= keep_prob
 
     #batch_dim = n_sample if layer is not None else 1    
     batch_dim = batch_size
@@ -318,7 +312,7 @@ def rnn_net(x, cell=None, layer=None, prev_state=None, is_train=1, keep_prob=0.8
     elif layer==1:
         global var_list_2
         var_list_2 += lstm_params
-    return output, state, lstm_cell
+    return output, state
 
 def emission_net(x, keep_params=1):
     global rnn_dim
@@ -376,17 +370,14 @@ def build_net(x, y_, keep_prob, optimizer, learning_rate, batch_cnt, sess):
 
     rnn1_states = [] 
     rnn2_states = [] 
-    rnn1_cells = [] 
-    rnn2_cells = [] 
     locs_mean_list = []
     class_reward = []
     train_ops = []
     global baseline
     global reward
-    baseline = num_step*[0]
     reward = 0
     tot_reward = 0
-    pred_list = []
+    baseline = num_step*[0]
     with tf.variable_scope("ram_net") as ram_scope:
         for glimpse_idx in xrange(num_step):
             grads_0 = []
@@ -400,11 +391,10 @@ def build_net(x, y_, keep_prob, optimizer, learning_rate, batch_cnt, sess):
                 with tf.variable_scope("context_net") as context_scope:
                     if context_net_type == "alex":
                         context_out = context_net_alex(x=x, y_=y_, keep_prob=keep_prob, n_classes=n_classes, is_train=1)
-                        saver.restore(sess, "models/model_130.ckpt")
                     elif context_net_type == "3-layer":    
                         context_out = context_net(x=x, y_=y_, keep_prob=keep_prob, n_classes=n_classes, is_train=1)
                 with tf.variable_scope("rnn2_net") as context_scope:
-                    rnn2_init_out, rnn2_init_state, rnn2_init_cell = rnn_net(x=context_out, layer=2, is_train=1, keep_prob=0.8)
+                    rnn2_init_out, rnn2_init_state = rnn_net(x=context_out, layer=2, is_train=1, keep_prob=0.8)
                 with tf.variable_scope("emission_net") as context_scope:
                     emission_out = emission_net(x=rnn2_init_out, keep_params=0)
                 dependence = None
@@ -412,12 +402,13 @@ def build_net(x, y_, keep_prob, optimizer, learning_rate, batch_cnt, sess):
                 locs_mean = emission_out if glimpse_idx == 0 else tf.floor(tot_emission_out/n_sample)
                 # print "LOCS MEAN: ", locs_mean.get_shape()
                 locs_mean_list.append(locs_mean)
-                locs = sample_location(n_sample, locs_mean) # batch_size x n_sample x 2
-                #print "SAMPLE LOCS SHAPE: ", locs.get_shape()
+                locs = sample_location(n_sample, locs_mean)
                 stop_locs_mean = tf.stop_gradient(locs_mean) # locs_mean will not contribute to the location gradient computation
+                locs_cost = get_locs_cost(locs=locs, mean=stop_locs_mean) # summed up cost
                 #avg_locs_cost = locs_cost/batch_size # location cost average over batch size
                 v_er2 = [vv for vv in tf.trainable_variables() if "emission_net" in vv.name or "rnn2_net" in vv.name]
             
+                locs_g = tf.gradients(locs_cost, v_er2)
  #               locs_grads.append(locs_g)
 
                 for sample_idx in xrange(n_sample):
@@ -429,30 +420,22 @@ def build_net(x, y_, keep_prob, optimizer, learning_rate, batch_cnt, sess):
                         if sample_idx > 0: tf.get_variable_scope().reuse_variables()
                         if glimpse_idx == 0:
                             rnn1_state = None # tf.zeros([batch_size, lstm_state_size], dtype=tf.float32) 
-                            rnn1_cell = None
                         else:
                             rnn1_state = rnn1_prev_states[sample_idx] 
-                            rnn1_cell = rnn1_prev_cells[sample_idx]
-                        rnn1_out, rnn1_new_state, rnn1_new_cell = rnn_net(x=glimpse_out, cell=rnn1_cell, layer=1, prev_state=rnn1_state, is_train=1, keep_prob=0.8)
+                        rnn1_out, rnn1_new_state = rnn_net(x=glimpse_out, layer=1, prev_state=rnn1_state, is_train=1, keep_prob=0.8)
                         if glimpse_idx == 0:
                             rnn1_states.append(rnn1_new_state)
-                            rnn1_cells.append(rnn1_new_cell)
                         else:    
                             rnn1_states[sample_idx] = rnn1_new_state
-                            rnn1_cells[sample_idx] = rnn1_new_cell
 
                     with tf.variable_scope("classify_net") as classify_scope:
                         if sample_idx > 0: tf.get_variable_scope().reuse_variables()
                         class_cost, y_pred, p_correct = classify_net(rnn1_out, y_, n_classes)
                         tot_p_correct = tf.log(p_correct) if sample_idx==0 else tot_p_correct+tf.log(p_correct)
                         tot_class_cost = class_cost if sample_idx==0 else tot_class_cost+class_cost
-
                         pred = tf.argmax(y_pred,1)
                         label = tf.argmax(y_,1)
                         correct = tf.equal(tf.argmax(y_pred,1), tf.argmax(y_,1))
-                        #print "CORRECT SHAPE: ", correct.get_shape()
-                        tot_correct = tf.expand_dims(tf.cast(correct, "float"),1) if sample_idx == 0 else tf.concat(1, [tot_correct, tf.expand_dims(tf.cast(correct, "float"),1)])
-                        #print "TOTAL CORRECT SHAPE: ", tot_correct.get_shape()
                         accuracy = tf.reduce_mean(tf.cast(correct, "float"))
                         tot_accuracy = accuracy if sample_idx==0 else tot_accuracy+accuracy
                         # if (glimpse_idx==num_step-1):
@@ -467,38 +450,26 @@ def build_net(x, y_, keep_prob, optimizer, learning_rate, batch_cnt, sess):
                             tf.get_variable_scope().reuse_variables()
                             if glimpse_idx == 0:
                                 rnn2_state = rnn2_init_state # tf.zeros([batch_size, lstm_state_size], dtype=tf.float32) 
-                                rnn2_cell = rnn2_init_cell
                             else:
                                 rnn2_state = rnn2_prev_states[sample_idx] 
-                                rnn2_cell = rnn2_prev_cells[sample_idx] 
-                            rnn2_out, rnn2_new_state, rnn2_new_cell = rnn_net(x=rnn1_out, layer=2, cell=rnn2_cell, prev_state=rnn2_state, is_train=1, keep_prob=0.8)
+                            rnn2_out, rnn2_new_state = rnn_net(x=rnn1_out, layer=2, prev_state=rnn2_state, is_train=1, keep_prob=0.8)
                             if glimpse_idx == 0:
                                 rnn2_states.append(rnn2_new_state)
-                                rnn2_cells.append(rnn2_new_cell)
                             else:    
                                 rnn2_states[sample_idx] = rnn2_new_state
-                                rnn2_cells[sample_idx] = rnn2_new_cell
 
                         with tf.variable_scope("emission_net") as emission_scope:
                             tf.get_variable_scope().reuse_variables()
                             emission_out = emission_net(x=rnn2_out, keep_params=0)  
                             tot_emission_out = emission_out if sample_idx==0 else tot_emission_out+emission_out
-                    if (glimpse_idx == num_step-1):        
-                        pred_list.append(pred)
-                #print "TOTAL CORRECT SHAPE: ", tot_correct.get_shape()            
-                stop_tot_correct = tf.stop_gradient(tot_correct)
-                locs_cost = get_locs_cost(locs=locs, mean=stop_locs_mean, reward=stop_tot_correct, base=baseline[glimpse_idx]) # summed up cost
-                locs_g = tf.gradients(locs_cost, v_er2)
                 #reward = tf.reduce_sum(tot_p_correct) / (n_sample*batch_size)        
-                reward = tf.reduce_sum(tot_correct) / (n_sample*batch_size)        
-                # tot_reward = dis_reward * tot_reward + (reward-baseline[glimpse_idx])
-                # inst_reward = reward-baseline[glimpse_idx]
-                class_reward.append(reward) # FIXME: total (discounnted) reward till current glimpse only the reward at current glimpse?
+                reward = tf.reduce_sum(tot_accuracy) / (n_sample)        
+                tot_reward = dis_reward * tot_reward + (reward-baseline[glimpse_idx])
+                inst_reward = reward-baseline[glimpse_idx]
+                class_reward.append(inst_reward) # FIXME: total (discounnted) reward till current glimpse only the reward at current glimpse?
                 baseline[glimpse_idx] = 0.9 * baseline[glimpse_idx] + 0.1 * reward
                 rnn1_prev_states = rnn1_states
                 rnn2_prev_states = rnn2_states
-                rnn1_prev_cells = rnn1_cells
-                rnn2_prev_cells = rnn2_cells
                 avg_class_cost = tf.reduce_sum(tot_class_cost)/(n_sample*batch_size) #classification cost for each glimpse
                 v_others = [vo for vo in tf.trainable_variables() if "emission_net" not in vo.name and "rnn2_net" not in vo.name]
                 allv = v_others + v_er2
@@ -511,7 +482,7 @@ def build_net(x, y_, keep_prob, optimizer, learning_rate, batch_cnt, sess):
                 for grad in class_g_2:
                     grads_1a.append(grad)
                 for grad in locs_g:
-                    grads_1b_prod.append(lambda_reward * grad)
+                    grads_1b_prod.append(lambda_reward * inst_reward * grad)
                 grads_1 = [p+q for p,q in zip(grads_1a, grads_1b_prod)]
                 allg = grads_0 + grads_1
                 train_ops.append(optimizer.apply_gradients(zip(allg, allv), global_step=batch_cnt)) # FIXME: batch_cnt?
@@ -521,16 +492,11 @@ def build_net(x, y_, keep_prob, optimizer, learning_rate, batch_cnt, sess):
     avg_accuracy = tf.reduce_sum(tot_accuracy)/n_sample
     locs_mean_arr = tf.pack(locs_mean_list)
     class_reward_arr = tf.pack(class_reward)
-    pred_arr = tf.pack(pred_list)
-    return avg_class_cost, locs_cost, class_reward_arr, avg_accuracy, locs_mean_arr, train_ops, pred_arr, grads_1b_prod, baseline
+    return avg_class_cost, locs_cost, class_reward_arr, avg_accuracy, locs_mean_arr, train_ops
 
-def get_locs_cost(locs, mean, reward, base):
+def get_locs_cost(locs, mean):
     mean_d = tf.tile(tf.expand_dims(mean, 1), [1, n_sample, 1])
-    tiled_base = tf.cast(tf.tile(tf.expand_dims(tf.expand_dims(base, 0), 0), [batch_size, n_sample]), tf.float32)
-    #print "TILED BASE SHAPE: ", tiled_base.get_shape(), tiled_base.dtype
-    red_reward = reward - tiled_base
-    reward_cost_arr = tf.mul(tf.reduce_sum(0.5 * tf.square((locs-mean_d)/stddev), 2), red_reward)
-    return tf.div(tf.reduce_sum(reward_cost_arr), (n_sample * batch_size))
+    return tf.div(tf.reduce_sum(0.5 * tf.square((locs-mean_d)/stddev)), (n_sample * batch_size))
 
 def print_config():
     print "------------RUN Configuration--------------"
@@ -555,7 +521,6 @@ def train_net(dataset_path = '/raid/mainak/datasets/nabirds/', image_path = 'ima
     global n_sample
     global stddev
     global rnn_dim
-    global saver
 
     print_config()
 
@@ -583,10 +548,7 @@ def train_net(dataset_path = '/raid/mainak/datasets/nabirds/', image_path = 'ima
     optimizer = tf.train.RMSPropOptimizer(learning_rate, decay = 0.98)
     saver = tf.train.Saver()
     sess = tf.Session()
-    class_cost, locs_cost, reward, accuracy, loc_mean, train_ops, preds, grads_1b, baseline_ = build_net(x, y_, keep_prob, optimizer, learning_rate, batch_cnt, sess)
-    baseline_arr = tf.pack(baseline_)
-
-
+    class_cost, locs_cost, reward, accuracy, loc_mean, train_ops= build_net(x, y_, keep_prob, optimizer, learning_rate, batch_cnt, sess)
     # print len(train_ops)
     # print train_ops[-1]
 
@@ -620,15 +582,12 @@ def train_net(dataset_path = '/raid/mainak/datasets/nabirds/', image_path = 'ima
                 batch_y = np.zeros((batch_size, n_classes))
                 batch_y[np.arange(batch_size), np.int32(batch_y_)-1] = 1
                 batch = [batch_x, batch_y]
-                feed_dict={x:batch[0], y_:batch[1],is_train:0, keep_prob:0.8}
+                feed_dict={x:batch[0], y_:batch[1],is_train:0, keep_prob:0.5}
 
-                class_cost_v, locs_cost_v, reward_v, accuracy_v, loc_mean_v, train_ops_v, preds_v, g1b_v, baseline_v = sess.run(fetches=[class_cost, locs_cost, reward, accuracy, loc_mean, train_ops[-1], preds, grads_1b[0], baseline_arr], feed_dict=feed_dict)
+                class_cost_v, locs_cost_v, reward_v, accuracy_v, loc_mean_v, train_ops_v = sess.run(fetches=[class_cost, locs_cost, reward, accuracy, loc_mean, train_ops[-1]], feed_dict=feed_dict)
                 print ("Epoch: %d, minibatch_idx: %d, class cost: %g, locs_cost: %g, accuracy: %g"%(epoch, minibatch_index, class_cost_v, locs_cost_v, accuracy_v))
                 print "Reward: ", np.array_str(reward_v)
                 print "Locations: ", np.array_str(loc_mean_v[:,1,:])
-                # print "Grads: ", g1b_v
-                # print "Baseline: ", baseline_v
-                # print "Predicted Classes: ", preds_v
             batch_cost.append(class_cost_v)    
             batch_accuracy.append(accuracy_v)    
             print("Epoch: %d, Train Bach Cost: %g, Train Batch Accuracy: %g"%(epoch, np.mean(batch_cost), np.mean(batch_accuracy)))

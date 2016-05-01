@@ -1,0 +1,1627 @@
+------------RUN Configuration--------------
+1.  Context Net:  3-layer
+2.  RNN Size:  512
+3.  Glimpse:  1
+4.  Sample:  10
+5.  Standard Deviation:  40
+6.  Initial Learrning Rate:  0.001
+7.  L2 Decay Rate:  0.0001
+8.  Lambda_reward:  0.7
+9.  Batch Size:  64
+10. Epoch:  100
+-------------------------------------------
+Epoch: 0, minibatch_idx: 0, class cost: 6.53031, locs_cost: 0.990584, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 1, class cost: 6.5302, locs_cost: 1.03886, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 2, class cost: 6.53026, locs_cost: 1.05889, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 3, class cost: 6.53023, locs_cost: 1.02111, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 4, class cost: 6.5303, locs_cost: 0.976188, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 5, class cost: 6.5302, locs_cost: 1.047, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 6, class cost: 6.53016, locs_cost: 0.9607, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 7, class cost: 6.53026, locs_cost: 0.928928, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 8, class cost: 6.53035, locs_cost: 1.0231, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 9, class cost: 6.53019, locs_cost: 0.992042, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 10, class cost: 6.5303, locs_cost: 1.10105, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 11, class cost: 6.53021, locs_cost: 1.01077, accuracy: 0.00625
+Reward:  [  9.76562515e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 12, class cost: 6.53019, locs_cost: 1.00486, accuracy: 0.00625
+Reward:  [  9.76562515e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 13, class cost: 6.53029, locs_cost: 1.06201, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 14, class cost: 6.53023, locs_cost: 0.927376, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 15, class cost: 6.53023, locs_cost: 0.968559, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 16, class cost: 6.53034, locs_cost: 0.991014, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 17, class cost: 6.53018, locs_cost: 0.991671, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 18, class cost: 6.53023, locs_cost: 0.992365, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 19, class cost: 6.53035, locs_cost: 0.98698, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 20, class cost: 6.53033, locs_cost: 0.966513, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 141.  141.]]
+Epoch: 0, minibatch_idx: 21, class cost: 6.53028, locs_cost: 1.05926, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 22, class cost: 6.53027, locs_cost: 0.964382, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 23, class cost: 6.53032, locs_cost: 1.01752, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 24, class cost: 6.53028, locs_cost: 1.01688, accuracy: 0.00625
+Reward:  [  9.76562515e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 25, class cost: 6.53026, locs_cost: 0.99954, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 26, class cost: 6.53034, locs_cost: 1.03879, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 27, class cost: 6.53022, locs_cost: 1.00092, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 28, class cost: 6.53037, locs_cost: 0.955987, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 29, class cost: 6.53042, locs_cost: 1.09209, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 30, class cost: 6.53027, locs_cost: 1.0141, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 139.  140.]]
+Epoch: 0, minibatch_idx: 31, class cost: 6.53031, locs_cost: 0.983195, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 32, class cost: 6.53033, locs_cost: 1.02515, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 33, class cost: 6.53025, locs_cost: 1.03321, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 34, class cost: 6.53029, locs_cost: 1.04993, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 35, class cost: 6.53025, locs_cost: 1.03161, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 36, class cost: 6.53028, locs_cost: 1.01244, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 37, class cost: 6.53033, locs_cost: 1.01006, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 38, class cost: 6.53023, locs_cost: 0.984069, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 39, class cost: 6.53031, locs_cost: 0.984462, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 40, class cost: 6.53043, locs_cost: 1.04542, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 41, class cost: 6.53021, locs_cost: 1.03037, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 42, class cost: 6.53024, locs_cost: 0.99342, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 43, class cost: 6.53026, locs_cost: 1.04018, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 44, class cost: 6.5303, locs_cost: 0.983617, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 45, class cost: 6.5301, locs_cost: 0.99248, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 46, class cost: 6.53033, locs_cost: 0.974664, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 47, class cost: 6.53022, locs_cost: 1.04005, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 48, class cost: 6.53038, locs_cost: 1.0007, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 49, class cost: 6.53029, locs_cost: 1.05648, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 50, class cost: 6.53017, locs_cost: 1.00498, accuracy: 0.0078125
+Reward:  [ 0.00012207]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 51, class cost: 6.53024, locs_cost: 1.00032, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 141.  141.]]
+Epoch: 0, minibatch_idx: 52, class cost: 6.53024, locs_cost: 1.05286, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 53, class cost: 6.53025, locs_cost: 1.05213, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 54, class cost: 6.53025, locs_cost: 0.992623, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 141.  140.]]
+Epoch: 0, minibatch_idx: 55, class cost: 6.53027, locs_cost: 0.982927, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 56, class cost: 6.53028, locs_cost: 1.0175, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 57, class cost: 6.53035, locs_cost: 1.04038, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 58, class cost: 6.53029, locs_cost: 1.01959, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 59, class cost: 6.53014, locs_cost: 0.988822, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 60, class cost: 6.53022, locs_cost: 1.00939, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 61, class cost: 6.5302, locs_cost: 0.977132, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 62, class cost: 6.53029, locs_cost: 0.929972, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 63, class cost: 6.5303, locs_cost: 0.977249, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 64, class cost: 6.53038, locs_cost: 1.08107, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 65, class cost: 6.53033, locs_cost: 0.969365, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 66, class cost: 6.53027, locs_cost: 1.00601, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  140.]]
+Epoch: 0, minibatch_idx: 67, class cost: 6.53018, locs_cost: 1.02463, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 68, class cost: 6.5303, locs_cost: 0.964257, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 69, class cost: 6.53028, locs_cost: 0.967798, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 70, class cost: 6.53023, locs_cost: 1.05929, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 71, class cost: 6.53031, locs_cost: 1.02946, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 72, class cost: 6.53043, locs_cost: 0.996613, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 73, class cost: 6.53014, locs_cost: 0.990584, accuracy: 0.009375
+Reward:  [ 0.00014648]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 74, class cost: 6.53024, locs_cost: 1.03669, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 75, class cost: 6.53031, locs_cost: 1.00789, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 76, class cost: 6.53028, locs_cost: 1.07586, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 77, class cost: 6.53014, locs_cost: 0.973451, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 78, class cost: 6.53015, locs_cost: 0.958478, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 79, class cost: 6.53025, locs_cost: 0.975134, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 141.  140.]]
+Epoch: 0, minibatch_idx: 80, class cost: 6.53023, locs_cost: 1.02109, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 81, class cost: 6.53028, locs_cost: 1.01254, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 82, class cost: 6.53025, locs_cost: 0.927355, accuracy: 0.00625
+Reward:  [  9.76562515e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 83, class cost: 6.5302, locs_cost: 0.958325, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 84, class cost: 6.53019, locs_cost: 1.04196, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 141.  140.]]
+Epoch: 0, minibatch_idx: 85, class cost: 6.5302, locs_cost: 1.021, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 86, class cost: 6.53024, locs_cost: 0.972085, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 87, class cost: 6.53019, locs_cost: 0.99164, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 88, class cost: 6.5303, locs_cost: 1.01607, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 89, class cost: 6.53016, locs_cost: 1.02977, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 90, class cost: 6.53013, locs_cost: 1.04728, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 91, class cost: 6.5303, locs_cost: 0.916803, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 141.  140.]]
+Epoch: 0, minibatch_idx: 92, class cost: 6.53035, locs_cost: 1.03004, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 93, class cost: 6.53034, locs_cost: 0.986507, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 94, class cost: 6.5302, locs_cost: 0.985434, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 95, class cost: 6.53016, locs_cost: 1.05891, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 96, class cost: 6.53021, locs_cost: 0.938653, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 97, class cost: 6.53023, locs_cost: 1.01424, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 98, class cost: 6.53021, locs_cost: 0.993582, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 99, class cost: 6.53015, locs_cost: 1.02737, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 100, class cost: 6.53032, locs_cost: 1.03674, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 101, class cost: 6.53021, locs_cost: 0.99268, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 102, class cost: 6.53035, locs_cost: 1.08409, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 103, class cost: 6.53026, locs_cost: 1.0097, accuracy: 0.00625
+Reward:  [  9.76562515e-05]
+Locations:  [[ 141.  140.]]
+Epoch: 0, minibatch_idx: 104, class cost: 6.5303, locs_cost: 0.987845, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 105, class cost: 6.53022, locs_cost: 0.992193, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 106, class cost: 6.53025, locs_cost: 1.05282, accuracy: 0.00625
+Reward:  [  9.76562515e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 107, class cost: 6.53026, locs_cost: 0.952137, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 108, class cost: 6.53036, locs_cost: 1.05947, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 109, class cost: 6.53015, locs_cost: 0.989133, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 110, class cost: 6.53033, locs_cost: 0.99626, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 111, class cost: 6.53019, locs_cost: 1.02506, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 112, class cost: 6.53024, locs_cost: 1.03098, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 113, class cost: 6.53035, locs_cost: 0.97368, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 114, class cost: 6.53015, locs_cost: 0.953348, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 115, class cost: 6.53034, locs_cost: 0.996648, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 116, class cost: 6.53013, locs_cost: 1.04055, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 117, class cost: 6.53029, locs_cost: 0.986675, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 118, class cost: 6.53039, locs_cost: 1.03249, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 119, class cost: 6.5302, locs_cost: 0.926931, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 120, class cost: 6.53012, locs_cost: 0.975644, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 121, class cost: 6.53021, locs_cost: 0.959822, accuracy: 0.00625
+Reward:  [  9.76562515e-05]
+Locations:  [[ 141.  140.]]
+Epoch: 0, minibatch_idx: 122, class cost: 6.53028, locs_cost: 1.0821, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 123, class cost: 6.53012, locs_cost: 1.02181, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 124, class cost: 6.53023, locs_cost: 0.973925, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 125, class cost: 6.53034, locs_cost: 1.12779, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 126, class cost: 6.53026, locs_cost: 0.990361, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 127, class cost: 6.53024, locs_cost: 0.992683, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 128, class cost: 6.5302, locs_cost: 0.957772, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 141.  140.]]
+Epoch: 0, minibatch_idx: 129, class cost: 6.53024, locs_cost: 1.05952, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 130, class cost: 6.53023, locs_cost: 1.02746, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 131, class cost: 6.53024, locs_cost: 1.0115, accuracy: 0.009375
+Reward:  [ 0.00014648]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 132, class cost: 6.53037, locs_cost: 0.963471, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  140.]]
+Epoch: 0, minibatch_idx: 133, class cost: 6.53029, locs_cost: 0.977801, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 134, class cost: 6.53017, locs_cost: 1.01867, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  140.]]
+Epoch: 0, minibatch_idx: 135, class cost: 6.53019, locs_cost: 0.997511, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 136, class cost: 6.53041, locs_cost: 0.914657, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 137, class cost: 6.53016, locs_cost: 0.912519, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 138, class cost: 6.53028, locs_cost: 1.01301, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 139, class cost: 6.53011, locs_cost: 0.965678, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 140, class cost: 6.5303, locs_cost: 0.965989, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 141, class cost: 6.53021, locs_cost: 1.04257, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 142, class cost: 6.53019, locs_cost: 1.00494, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 143, class cost: 6.53023, locs_cost: 1.00314, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  140.]]
+Epoch: 0, minibatch_idx: 144, class cost: 6.53007, locs_cost: 1.01917, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 145, class cost: 6.53027, locs_cost: 1.02895, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 146, class cost: 6.53033, locs_cost: 1.0296, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 147, class cost: 6.53029, locs_cost: 0.978886, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 148, class cost: 6.53021, locs_cost: 0.897401, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 149, class cost: 6.5303, locs_cost: 1.04053, accuracy: 0.0125
+Reward:  [ 0.00019531]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 150, class cost: 6.53023, locs_cost: 0.998465, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 151, class cost: 6.5302, locs_cost: 0.932524, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 152, class cost: 6.53027, locs_cost: 0.997495, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 153, class cost: 6.53019, locs_cost: 1.06198, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 154, class cost: 6.53021, locs_cost: 1.03463, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 155, class cost: 6.53026, locs_cost: 0.956672, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 156, class cost: 6.53021, locs_cost: 0.956603, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 157, class cost: 6.53008, locs_cost: 0.958225, accuracy: 0.0125
+Reward:  [ 0.00019531]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 158, class cost: 6.53011, locs_cost: 0.964172, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 159, class cost: 6.53004, locs_cost: 1.01218, accuracy: 0.0140625
+Reward:  [ 0.00021973]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 160, class cost: 6.53019, locs_cost: 1.01982, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 161, class cost: 6.53021, locs_cost: 1.02063, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 162, class cost: 6.53017, locs_cost: 0.989937, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 163, class cost: 6.53018, locs_cost: 0.990967, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 164, class cost: 6.53021, locs_cost: 0.96321, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 165, class cost: 6.5303, locs_cost: 0.969796, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 166, class cost: 6.53027, locs_cost: 1.01967, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 167, class cost: 6.5302, locs_cost: 0.969838, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 139.  140.]]
+Epoch: 0, minibatch_idx: 168, class cost: 6.53005, locs_cost: 1.01401, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 169, class cost: 6.53014, locs_cost: 1.00585, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 170, class cost: 6.53006, locs_cost: 1.03371, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 171, class cost: 6.53018, locs_cost: 0.943021, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 172, class cost: 6.53023, locs_cost: 1.06438, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 173, class cost: 6.53017, locs_cost: 0.996436, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 174, class cost: 6.53023, locs_cost: 1.00761, accuracy: 0.00625
+Reward:  [  9.76562515e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 175, class cost: 6.53027, locs_cost: 0.991419, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 176, class cost: 6.53025, locs_cost: 1.06484, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 177, class cost: 6.53004, locs_cost: 0.930124, accuracy: 0.00625
+Reward:  [  9.76562515e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 178, class cost: 6.53029, locs_cost: 1.00313, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 179, class cost: 6.53015, locs_cost: 0.969675, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 180, class cost: 6.53014, locs_cost: 0.934141, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 181, class cost: 6.53023, locs_cost: 1.02401, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 182, class cost: 6.53009, locs_cost: 0.976388, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 141.  141.]]
+Epoch: 0, minibatch_idx: 183, class cost: 6.53015, locs_cost: 1.0219, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 139.  140.]]
+Epoch: 0, minibatch_idx: 184, class cost: 6.53024, locs_cost: 1.02228, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 185, class cost: 6.53026, locs_cost: 0.980893, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 186, class cost: 6.5302, locs_cost: 1.00008, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 187, class cost: 6.53017, locs_cost: 0.942278, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 188, class cost: 6.5301, locs_cost: 1.07326, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 189, class cost: 6.53027, locs_cost: 0.99044, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 190, class cost: 6.53005, locs_cost: 1.00449, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 191, class cost: 6.53013, locs_cost: 0.982192, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 139.  140.]]
+Epoch: 0, minibatch_idx: 192, class cost: 6.53015, locs_cost: 1.01233, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 193, class cost: 6.53025, locs_cost: 0.981176, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 194, class cost: 6.53013, locs_cost: 1.00423, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 195, class cost: 6.53003, locs_cost: 1.05335, accuracy: 0.0109375
+Reward:  [ 0.0001709]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 196, class cost: 6.53021, locs_cost: 0.893153, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 197, class cost: 6.53016, locs_cost: 1.08701, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 198, class cost: 6.53023, locs_cost: 0.99141, accuracy: 0.00625
+Reward:  [  9.76562515e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 199, class cost: 6.53017, locs_cost: 0.96008, accuracy: 0.009375
+Reward:  [ 0.00014648]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 200, class cost: 6.53022, locs_cost: 0.951083, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 201, class cost: 6.52998, locs_cost: 0.998589, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 202, class cost: 6.53012, locs_cost: 0.995572, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 203, class cost: 6.53023, locs_cost: 0.977404, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 204, class cost: 6.5301, locs_cost: 1.05238, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 205, class cost: 6.53017, locs_cost: 0.964045, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 206, class cost: 6.53016, locs_cost: 1.07266, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 207, class cost: 6.53004, locs_cost: 1.01488, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 208, class cost: 6.53013, locs_cost: 0.937173, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 209, class cost: 6.53017, locs_cost: 0.956388, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 210, class cost: 6.5301, locs_cost: 1.02921, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 141.  141.]]
+Epoch: 0, minibatch_idx: 211, class cost: 6.53015, locs_cost: 1.01202, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 212, class cost: 6.53009, locs_cost: 0.940932, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 213, class cost: 6.53011, locs_cost: 0.96509, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  140.]]
+Epoch: 0, minibatch_idx: 214, class cost: 6.53004, locs_cost: 0.953857, accuracy: 0.0078125
+Reward:  [ 0.00012207]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 215, class cost: 6.53021, locs_cost: 1.08147, accuracy: 0.00625
+Reward:  [  9.76562515e-05]
+Locations:  [[ 141.  140.]]
+Epoch: 0, minibatch_idx: 216, class cost: 6.53, locs_cost: 1.0835, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 217, class cost: 6.53016, locs_cost: 1.05808, accuracy: 0.0078125
+Reward:  [ 0.00012207]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 218, class cost: 6.53012, locs_cost: 0.978439, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 219, class cost: 6.53008, locs_cost: 1.03348, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 220, class cost: 6.53001, locs_cost: 1.01963, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 221, class cost: 6.53003, locs_cost: 0.955002, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 222, class cost: 6.53004, locs_cost: 1.00398, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 223, class cost: 6.53008, locs_cost: 0.987057, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 224, class cost: 6.53004, locs_cost: 0.945077, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 225, class cost: 6.53001, locs_cost: 1.0263, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 226, class cost: 6.53019, locs_cost: 1.01357, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 227, class cost: 6.53015, locs_cost: 0.943839, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 228, class cost: 6.53013, locs_cost: 0.987788, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 229, class cost: 6.53005, locs_cost: 1.00506, accuracy: 0.00625
+Reward:  [  9.76562515e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 230, class cost: 6.53008, locs_cost: 0.998303, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 231, class cost: 6.52997, locs_cost: 0.978213, accuracy: 0.0140625
+Reward:  [ 0.00021973]
+Locations:  [[ 141.  141.]]
+Epoch: 0, minibatch_idx: 232, class cost: 6.53009, locs_cost: 1.01689, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 233, class cost: 6.53018, locs_cost: 1.01317, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 234, class cost: 6.53006, locs_cost: 0.999111, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 235, class cost: 6.53012, locs_cost: 0.995504, accuracy: 0.00625
+Reward:  [  9.76562515e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 236, class cost: 6.53006, locs_cost: 0.966707, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 237, class cost: 6.53024, locs_cost: 0.968121, accuracy: 0.00625
+Reward:  [  9.76562515e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 238, class cost: 6.53021, locs_cost: 1.00047, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 239, class cost: 6.53009, locs_cost: 1.09069, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 240, class cost: 6.52991, locs_cost: 0.977064, accuracy: 0.0125
+Reward:  [ 0.00019531]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 241, class cost: 6.53003, locs_cost: 0.985943, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 242, class cost: 6.53001, locs_cost: 0.912584, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 243, class cost: 6.53014, locs_cost: 1.00576, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 244, class cost: 6.53, locs_cost: 0.955318, accuracy: 0.0140625
+Reward:  [ 0.00021973]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 245, class cost: 6.52989, locs_cost: 0.968339, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 139.  140.]]
+Epoch: 0, minibatch_idx: 246, class cost: 6.52988, locs_cost: 0.982127, accuracy: 0.0125
+Reward:  [ 0.00019531]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 247, class cost: 6.52995, locs_cost: 0.970307, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 248, class cost: 6.53013, locs_cost: 0.998014, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 249, class cost: 6.52992, locs_cost: 1.04415, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 250, class cost: 6.53015, locs_cost: 0.994838, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  140.]]
+Epoch: 0, minibatch_idx: 251, class cost: 6.53032, locs_cost: 0.982452, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 252, class cost: 6.52995, locs_cost: 0.968981, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 253, class cost: 6.52994, locs_cost: 0.958813, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 254, class cost: 6.53015, locs_cost: 0.985781, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  141.]]
+Epoch: 0, minibatch_idx: 255, class cost: 6.53011, locs_cost: 0.997632, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 256, class cost: 6.52981, locs_cost: 0.988753, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 257, class cost: 6.5301, locs_cost: 0.960688, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 258, class cost: 6.53011, locs_cost: 1.00704, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 259, class cost: 6.53023, locs_cost: 1.01775, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 260, class cost: 6.53014, locs_cost: 1.02332, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 261, class cost: 6.52968, locs_cost: 1.00321, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 262, class cost: 6.52994, locs_cost: 0.965835, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 263, class cost: 6.53021, locs_cost: 1.02282, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 264, class cost: 6.53024, locs_cost: 1.02981, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 265, class cost: 6.53017, locs_cost: 1.00389, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 266, class cost: 6.53018, locs_cost: 0.980039, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 267, class cost: 6.52991, locs_cost: 1.017, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 268, class cost: 6.53014, locs_cost: 0.931836, accuracy: 0.0125
+Reward:  [ 0.00019531]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 269, class cost: 6.52995, locs_cost: 0.966619, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 270, class cost: 6.53035, locs_cost: 0.955031, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 271, class cost: 6.52996, locs_cost: 1.02929, accuracy: 0.009375
+Reward:  [ 0.00014648]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 272, class cost: 6.53003, locs_cost: 0.983635, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  140.]]
+Epoch: 0, minibatch_idx: 273, class cost: 6.53001, locs_cost: 1.0756, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 274, class cost: 6.5301, locs_cost: 1.04363, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 275, class cost: 6.53015, locs_cost: 0.93734, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 276, class cost: 6.52998, locs_cost: 1.00906, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 277, class cost: 6.53005, locs_cost: 0.960948, accuracy: 0.009375
+Reward:  [ 0.00014648]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 278, class cost: 6.53018, locs_cost: 1.00064, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 279, class cost: 6.52983, locs_cost: 0.993548, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 280, class cost: 6.52994, locs_cost: 1.01871, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 281, class cost: 6.52984, locs_cost: 0.928073, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 282, class cost: 6.52995, locs_cost: 0.995172, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 283, class cost: 6.52968, locs_cost: 0.98405, accuracy: 0.009375
+Reward:  [ 0.00014648]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 284, class cost: 6.52987, locs_cost: 0.946013, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 285, class cost: 6.52987, locs_cost: 0.980976, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 286, class cost: 6.53016, locs_cost: 1.03163, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 287, class cost: 6.5299, locs_cost: 1.06131, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 288, class cost: 6.53005, locs_cost: 1.01149, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 289, class cost: 6.53025, locs_cost: 1.02557, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 290, class cost: 6.53, locs_cost: 1.03405, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 291, class cost: 6.52972, locs_cost: 0.993658, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 292, class cost: 6.52989, locs_cost: 1.0131, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 293, class cost: 6.52982, locs_cost: 0.981993, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 294, class cost: 6.52978, locs_cost: 0.961244, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 295, class cost: 6.52991, locs_cost: 0.968495, accuracy: 0.0078125
+Reward:  [ 0.00012207]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 296, class cost: 6.53017, locs_cost: 0.965803, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 297, class cost: 6.52999, locs_cost: 1.04774, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 298, class cost: 6.52948, locs_cost: 1.00141, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 299, class cost: 6.53, locs_cost: 1.01344, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 300, class cost: 6.52994, locs_cost: 1.02359, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 301, class cost: 6.53006, locs_cost: 1.01961, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 302, class cost: 6.52998, locs_cost: 1.05208, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 303, class cost: 6.52997, locs_cost: 0.975116, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 304, class cost: 6.53006, locs_cost: 0.983769, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 141.  141.]]
+Epoch: 0, minibatch_idx: 305, class cost: 6.53013, locs_cost: 1.00899, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 141.  140.]]
+Epoch: 0, minibatch_idx: 306, class cost: 6.52962, locs_cost: 1.01467, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 307, class cost: 6.52991, locs_cost: 0.974888, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 308, class cost: 6.52964, locs_cost: 1.04075, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  140.]]
+Epoch: 0, minibatch_idx: 309, class cost: 6.53, locs_cost: 0.95924, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  140.]]
+Epoch: 0, minibatch_idx: 310, class cost: 6.5299, locs_cost: 1.06301, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 311, class cost: 6.5301, locs_cost: 1.0657, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 312, class cost: 6.52978, locs_cost: 0.94891, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  140.]]
+Epoch: 0, minibatch_idx: 313, class cost: 6.52987, locs_cost: 0.999416, accuracy: 0.0078125
+Reward:  [ 0.00012207]
+Locations:  [[ 139.  140.]]
+Epoch: 0, minibatch_idx: 314, class cost: 6.52981, locs_cost: 1.01027, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  140.]]
+Epoch: 0, minibatch_idx: 315, class cost: 6.52973, locs_cost: 1.02382, accuracy: 0.0078125
+Reward:  [ 0.00012207]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 316, class cost: 6.52982, locs_cost: 0.928793, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 317, class cost: 6.52987, locs_cost: 0.967588, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 318, class cost: 6.53036, locs_cost: 0.987384, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 319, class cost: 6.53004, locs_cost: 1.01312, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 320, class cost: 6.52995, locs_cost: 0.953535, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  141.]]
+Epoch: 0, minibatch_idx: 321, class cost: 6.53026, locs_cost: 1.03669, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 322, class cost: 6.52948, locs_cost: 1.04144, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 323, class cost: 6.53029, locs_cost: 1.01537, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 324, class cost: 6.52956, locs_cost: 0.981673, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 325, class cost: 6.5298, locs_cost: 1.0547, accuracy: 0.00625
+Reward:  [  9.76562515e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 326, class cost: 6.53002, locs_cost: 0.994151, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  140.]]
+Epoch: 0, minibatch_idx: 327, class cost: 6.52969, locs_cost: 0.980207, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 328, class cost: 6.52968, locs_cost: 0.987467, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 329, class cost: 6.52972, locs_cost: 0.981733, accuracy: 0.00625
+Reward:  [  9.76562515e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 330, class cost: 6.52962, locs_cost: 1.00688, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 331, class cost: 6.5297, locs_cost: 1.01334, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 332, class cost: 6.52992, locs_cost: 1.02818, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 333, class cost: 6.53016, locs_cost: 1.04827, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 334, class cost: 6.52961, locs_cost: 1.00269, accuracy: 0.00625
+Reward:  [  9.76562515e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 335, class cost: 6.5297, locs_cost: 0.990163, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 336, class cost: 6.5295, locs_cost: 0.950654, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 337, class cost: 6.5295, locs_cost: 1.00664, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 338, class cost: 6.53005, locs_cost: 0.974751, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 339, class cost: 6.52982, locs_cost: 1.03331, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 340, class cost: 6.52973, locs_cost: 0.986233, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 341, class cost: 6.52957, locs_cost: 1.0727, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 342, class cost: 6.52934, locs_cost: 1.04918, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 343, class cost: 6.52964, locs_cost: 1.00413, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 344, class cost: 6.53005, locs_cost: 0.946058, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 345, class cost: 6.52983, locs_cost: 1.05321, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 346, class cost: 6.52949, locs_cost: 1.03132, accuracy: 0.0125
+Reward:  [ 0.00019531]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 347, class cost: 6.52966, locs_cost: 1.00942, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 348, class cost: 6.5299, locs_cost: 0.98446, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 349, class cost: 6.52982, locs_cost: 0.979977, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 350, class cost: 6.52942, locs_cost: 1.06952, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 351, class cost: 6.52938, locs_cost: 0.93029, accuracy: 0.015625
+Reward:  [ 0.00024414]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 352, class cost: 6.52951, locs_cost: 1.02914, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 353, class cost: 6.53019, locs_cost: 1.00325, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  140.]]
+Epoch: 0, minibatch_idx: 354, class cost: 6.52983, locs_cost: 0.978342, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 355, class cost: 6.53001, locs_cost: 0.993068, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 356, class cost: 6.52967, locs_cost: 1.00759, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 357, class cost: 6.52994, locs_cost: 0.894674, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 358, class cost: 6.52928, locs_cost: 0.956299, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 0, minibatch_idx: 359, class cost: 6.52992, locs_cost: 0.928471, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  140.]]
+Epoch: 0, minibatch_idx: 360, class cost: 6.52943, locs_cost: 1.03375, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 361, class cost: 6.52987, locs_cost: 1.11166, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 362, class cost: 6.52887, locs_cost: 0.993687, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 363, class cost: 6.52953, locs_cost: 0.974892, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 364, class cost: 6.52937, locs_cost: 1.03507, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 365, class cost: 6.52938, locs_cost: 0.954654, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 366, class cost: 6.52948, locs_cost: 1.00846, accuracy: 0.0109375
+Reward:  [ 0.0001709]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 367, class cost: 6.52924, locs_cost: 0.96634, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 368, class cost: 6.52992, locs_cost: 0.986719, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 369, class cost: 6.52962, locs_cost: 0.94402, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 370, class cost: 6.5296, locs_cost: 1.01357, accuracy: 0.0078125
+Reward:  [ 0.00012207]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 371, class cost: 6.52953, locs_cost: 0.955705, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, minibatch_idx: 372, class cost: 6.52946, locs_cost: 0.983445, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 0, Train Bach Cost: 6.52946, Train Batch Accuracy: 0
+Epoch: 1, minibatch_idx: 0, class cost: 6.52923, locs_cost: 1.02569, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 1, minibatch_idx: 1, class cost: 6.5295, locs_cost: 1.04883, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 2, class cost: 6.5294, locs_cost: 1.0298, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 3, class cost: 6.52943, locs_cost: 0.943395, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  140.]]
+Epoch: 1, minibatch_idx: 4, class cost: 6.52961, locs_cost: 0.970305, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 5, class cost: 6.52962, locs_cost: 0.973205, accuracy: 0.0125
+Reward:  [ 0.00019531]
+Locations:  [[ 140.  141.]]
+Epoch: 1, minibatch_idx: 6, class cost: 6.52914, locs_cost: 1.03324, accuracy: 0.015625
+Reward:  [ 0.00024414]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 7, class cost: 6.52956, locs_cost: 1.11257, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 8, class cost: 6.52951, locs_cost: 0.993148, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 9, class cost: 6.52938, locs_cost: 0.935911, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 10, class cost: 6.52899, locs_cost: 1.00878, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 11, class cost: 6.52932, locs_cost: 1.04457, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 1, minibatch_idx: 12, class cost: 6.52911, locs_cost: 0.930753, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 1, minibatch_idx: 13, class cost: 6.52968, locs_cost: 0.9973, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 14, class cost: 6.52941, locs_cost: 1.03727, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 15, class cost: 6.52966, locs_cost: 0.980807, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 16, class cost: 6.52966, locs_cost: 0.980488, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 17, class cost: 6.52963, locs_cost: 0.99398, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 18, class cost: 6.52985, locs_cost: 1.02153, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 19, class cost: 6.53002, locs_cost: 0.989119, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  140.]]
+Epoch: 1, minibatch_idx: 20, class cost: 6.52908, locs_cost: 1.00751, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 21, class cost: 6.53003, locs_cost: 0.964956, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 22, class cost: 6.5299, locs_cost: 1.01897, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  141.]]
+Epoch: 1, minibatch_idx: 23, class cost: 6.52907, locs_cost: 1.05664, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 24, class cost: 6.52932, locs_cost: 0.989932, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 25, class cost: 6.52928, locs_cost: 0.96503, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 26, class cost: 6.52959, locs_cost: 0.960255, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 27, class cost: 6.52906, locs_cost: 1.04594, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 28, class cost: 6.52908, locs_cost: 0.996721, accuracy: 0.0046875
+Reward:  [  7.32421904e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 29, class cost: 6.52989, locs_cost: 1.02851, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 30, class cost: 6.52923, locs_cost: 1.03227, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 31, class cost: 6.52946, locs_cost: 0.978306, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 32, class cost: 6.5293, locs_cost: 1.01745, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 33, class cost: 6.52908, locs_cost: 1.00662, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 34, class cost: 6.52943, locs_cost: 0.946016, accuracy: 0.0140625
+Reward:  [ 0.00021973]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 35, class cost: 6.52872, locs_cost: 0.978583, accuracy: 0.015625
+Reward:  [ 0.00024414]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 36, class cost: 6.52855, locs_cost: 1.0456, accuracy: 0.015625
+Reward:  [ 0.00024414]
+Locations:  [[ 141.  141.]]
+Epoch: 1, minibatch_idx: 37, class cost: 6.5289, locs_cost: 1.06365, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 38, class cost: 6.52951, locs_cost: 0.966782, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 39, class cost: 6.52951, locs_cost: 1.02011, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 40, class cost: 6.52923, locs_cost: 0.989694, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 41, class cost: 6.52878, locs_cost: 1.0297, accuracy: 0.015625
+Reward:  [ 0.00024414]
+Locations:  [[ 140.  141.]]
+Epoch: 1, minibatch_idx: 42, class cost: 6.52865, locs_cost: 1.01692, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 43, class cost: 6.52841, locs_cost: 1.06335, accuracy: 0.015625
+Reward:  [ 0.00024414]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 44, class cost: 6.5288, locs_cost: 0.940826, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 45, class cost: 6.52875, locs_cost: 1.00677, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 46, class cost: 6.53047, locs_cost: 0.976599, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 47, class cost: 6.52869, locs_cost: 0.986218, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 48, class cost: 6.52854, locs_cost: 1.00055, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 49, class cost: 6.52781, locs_cost: 0.970174, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 50, class cost: 6.52774, locs_cost: 1.07053, accuracy: 0.015625
+Reward:  [ 0.00024414]
+Locations:  [[ 141.  140.]]
+Epoch: 1, minibatch_idx: 51, class cost: 6.52925, locs_cost: 1.00857, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  140.]]
+Epoch: 1, minibatch_idx: 52, class cost: 6.52872, locs_cost: 0.962749, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 53, class cost: 6.5277, locs_cost: 0.982138, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 54, class cost: 6.52882, locs_cost: 0.959011, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 55, class cost: 6.52961, locs_cost: 0.979679, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 56, class cost: 6.52891, locs_cost: 0.995213, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  141.]]
+Epoch: 1, minibatch_idx: 57, class cost: 6.52921, locs_cost: 1.02175, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 58, class cost: 6.52983, locs_cost: 0.928753, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 59, class cost: 6.52838, locs_cost: 0.959186, accuracy: 0.01875
+Reward:  [ 0.00029297]
+Locations:  [[ 140.  141.]]
+Epoch: 1, minibatch_idx: 60, class cost: 6.52913, locs_cost: 0.98592, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 61, class cost: 6.52892, locs_cost: 1.02955, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  141.]]
+Epoch: 1, minibatch_idx: 62, class cost: 6.52875, locs_cost: 1.03517, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 63, class cost: 6.52869, locs_cost: 0.946789, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 64, class cost: 6.52911, locs_cost: 0.992838, accuracy: 0.015625
+Reward:  [ 0.00024414]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 65, class cost: 6.52998, locs_cost: 0.976877, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 66, class cost: 6.52954, locs_cost: 1.08041, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 67, class cost: 6.52815, locs_cost: 0.965519, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 1, minibatch_idx: 68, class cost: 6.52948, locs_cost: 1.06589, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  140.]]
+Epoch: 1, minibatch_idx: 69, class cost: 6.52854, locs_cost: 0.988192, accuracy: 0.015625
+Reward:  [ 0.00024414]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 70, class cost: 6.52931, locs_cost: 1.01891, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 71, class cost: 6.52858, locs_cost: 1.01529, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 72, class cost: 6.52856, locs_cost: 0.980609, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 73, class cost: 6.52725, locs_cost: 0.949683, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 74, class cost: 6.52837, locs_cost: 1.00301, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 1, minibatch_idx: 75, class cost: 6.52751, locs_cost: 1.13508, accuracy: 0.015625
+Reward:  [ 0.00024414]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 76, class cost: 6.5288, locs_cost: 0.995584, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 77, class cost: 6.52808, locs_cost: 0.976661, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 78, class cost: 6.5283, locs_cost: 1.00567, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 79, class cost: 6.52901, locs_cost: 1.051, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 1, minibatch_idx: 80, class cost: 6.52804, locs_cost: 1.02111, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 81, class cost: 6.52885, locs_cost: 0.995896, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 82, class cost: 6.52752, locs_cost: 0.90416, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 83, class cost: 6.52736, locs_cost: 1.02174, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 84, class cost: 6.52931, locs_cost: 1.00472, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 85, class cost: 6.5275, locs_cost: 0.967171, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 86, class cost: 6.52878, locs_cost: 0.994012, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 87, class cost: 6.52903, locs_cost: 1.01774, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  140.]]
+Epoch: 1, minibatch_idx: 88, class cost: 6.52995, locs_cost: 0.937906, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 89, class cost: 6.52731, locs_cost: 0.983055, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 90, class cost: 6.52814, locs_cost: 1.00368, accuracy: 0.003125
+Reward:  [  4.88281257e-05]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 91, class cost: 6.52833, locs_cost: 0.994051, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 92, class cost: 6.52848, locs_cost: 1.01476, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 93, class cost: 6.52878, locs_cost: 1.03904, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 94, class cost: 6.52937, locs_cost: 1.02272, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 95, class cost: 6.52798, locs_cost: 1.02748, accuracy: 0.015625
+Reward:  [ 0.00024414]
+Locations:  [[ 140.  141.]]
+Epoch: 1, minibatch_idx: 96, class cost: 6.52874, locs_cost: 1.04929, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 97, class cost: 6.52781, locs_cost: 1.04512, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 98, class cost: 6.52853, locs_cost: 0.949944, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 99, class cost: 6.52665, locs_cost: 0.962723, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 100, class cost: 6.52783, locs_cost: 1.02894, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 101, class cost: 6.52831, locs_cost: 1.01756, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 102, class cost: 6.52841, locs_cost: 0.977287, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 103, class cost: 6.52819, locs_cost: 0.987542, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 104, class cost: 6.52793, locs_cost: 1.07156, accuracy: 0.015625
+Reward:  [ 0.00024414]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 105, class cost: 6.5285, locs_cost: 1.00958, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  141.]]
+Epoch: 1, minibatch_idx: 106, class cost: 6.52821, locs_cost: 1.07341, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 107, class cost: 6.52932, locs_cost: 0.937828, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 108, class cost: 6.52832, locs_cost: 1.00237, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 109, class cost: 6.52931, locs_cost: 1.03392, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 110, class cost: 6.52928, locs_cost: 0.969584, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 111, class cost: 6.52803, locs_cost: 0.950711, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  140.]]
+Epoch: 1, minibatch_idx: 112, class cost: 6.52664, locs_cost: 1.03442, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 1, minibatch_idx: 113, class cost: 6.52873, locs_cost: 0.971184, accuracy: 0.015625
+Reward:  [ 0.00024414]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 114, class cost: 6.52657, locs_cost: 0.999411, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 1, minibatch_idx: 115, class cost: 6.52865, locs_cost: 1.03809, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 116, class cost: 6.52926, locs_cost: 1.01579, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 117, class cost: 6.52785, locs_cost: 0.978619, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 118, class cost: 6.52724, locs_cost: 1.00327, accuracy: 0.0140625
+Reward:  [ 0.00021973]
+Locations:  [[ 140.  141.]]
+Epoch: 1, minibatch_idx: 119, class cost: 6.52632, locs_cost: 0.974212, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 120, class cost: 6.52728, locs_cost: 1.03375, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 121, class cost: 6.52583, locs_cost: 0.948527, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 122, class cost: 6.5257, locs_cost: 0.931897, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 123, class cost: 6.52795, locs_cost: 0.986079, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 124, class cost: 6.52685, locs_cost: 1.0994, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 125, class cost: 6.5264, locs_cost: 0.991109, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 126, class cost: 6.52619, locs_cost: 1.1047, accuracy: 0.0015625
+Reward:  [  2.44140629e-05]
+Locations:  [[ 141.  141.]]
+Epoch: 1, minibatch_idx: 127, class cost: 6.52849, locs_cost: 1.00219, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 128, class cost: 6.52674, locs_cost: 1.05012, accuracy: 0.015625
+Reward:  [ 0.00024414]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 129, class cost: 6.52854, locs_cost: 0.972559, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 130, class cost: 6.5248, locs_cost: 1.00079, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 131, class cost: 6.52735, locs_cost: 0.972181, accuracy: 0.015625
+Reward:  [ 0.00024414]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 132, class cost: 6.52742, locs_cost: 0.979145, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 133, class cost: 6.52842, locs_cost: 0.905, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 1, minibatch_idx: 134, class cost: 6.52827, locs_cost: 1.01683, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 135, class cost: 6.52758, locs_cost: 0.990378, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 1, minibatch_idx: 136, class cost: 6.52825, locs_cost: 0.986938, accuracy: 0.0296875
+Reward:  [ 0.00046387]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 137, class cost: 6.52673, locs_cost: 1.08381, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  140.]]
+Epoch: 1, minibatch_idx: 138, class cost: 6.52693, locs_cost: 1.07666, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 139, class cost: 6.52699, locs_cost: 1.01421, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 1, minibatch_idx: 140, class cost: 6.52659, locs_cost: 0.985475, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 141, class cost: 6.52683, locs_cost: 1.01302, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 142, class cost: 6.52665, locs_cost: 0.950336, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 1, minibatch_idx: 143, class cost: 6.52884, locs_cost: 1.03545, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 144, class cost: 6.52594, locs_cost: 0.972081, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 1, minibatch_idx: 145, class cost: 6.52602, locs_cost: 1.03628, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  140.]]
+Epoch: 1, minibatch_idx: 146, class cost: 6.52686, locs_cost: 0.970294, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 1, minibatch_idx: 147, class cost: 6.52864, locs_cost: 0.993641, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 148, class cost: 6.52497, locs_cost: 1.06674, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 149, class cost: 6.52875, locs_cost: 1.05021, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 150, class cost: 6.5274, locs_cost: 1.03107, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 151, class cost: 6.52737, locs_cost: 1.01381, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 152, class cost: 6.5289, locs_cost: 0.919883, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 153, class cost: 6.52709, locs_cost: 0.916998, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 154, class cost: 6.52662, locs_cost: 1.04782, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 155, class cost: 6.52681, locs_cost: 0.97864, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 1, minibatch_idx: 156, class cost: 6.52831, locs_cost: 0.981576, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 157, class cost: 6.52876, locs_cost: 0.999139, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  141.]]
+Epoch: 1, minibatch_idx: 158, class cost: 6.52814, locs_cost: 0.985642, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 141.  140.]]
+Epoch: 1, minibatch_idx: 159, class cost: 6.52635, locs_cost: 0.996523, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 160, class cost: 6.52781, locs_cost: 0.990153, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 161, class cost: 6.52558, locs_cost: 0.984887, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 162, class cost: 6.52872, locs_cost: 0.960594, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 163, class cost: 6.52737, locs_cost: 0.949638, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]
+Epoch: 1, minibatch_idx: 164, class cost: 6.52752, locs_cost: 1.0243, accuracy: 0
+Reward:  [ 0.]
+Locations:  [[ 140.  140.]]

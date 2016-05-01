@@ -16,7 +16,7 @@ from tensorflow.python.ops import control_flow_ops
 global var_list
 global var_list_2
 global var_list_3
-global baseline
+#global baseline
 global lstm_state_size
 global lambda_reward
 global n_sample
@@ -372,7 +372,7 @@ def onehot_to_integer(y, n_classes):
             return i
     return -1        
 
-def build_net(x, y_, keep_prob, optimizer, learning_rate, batch_cnt, sess):
+def build_net(x, y_, keep_prob, optimizer, learning_rate, batch_cnt, sess, baseline):
 
     rnn1_states = [] 
     rnn2_states = [] 
@@ -381,9 +381,8 @@ def build_net(x, y_, keep_prob, optimizer, learning_rate, batch_cnt, sess):
     locs_mean_list = []
     class_reward = []
     train_ops = []
-    global baseline
+    #global baseline
     global reward
-    baseline = num_step*[0]
     reward = 0
     tot_reward = 0
     pred_list = []
@@ -549,7 +548,7 @@ def print_config():
 def train_net(dataset_path = '/raid/mainak/datasets/nabirds/', image_path = 'images',n_classes=555): 
 
     global lstm_state_size
-    global baseline
+    #global baseline
 
     global lambda_reward
     global n_sample
@@ -575,6 +574,7 @@ def train_net(dataset_path = '/raid/mainak/datasets/nabirds/', image_path = 'ima
 
     x = tf.placeholder(tf.float32, shape=(None,image_size,image_size,3))
     y_ = tf.placeholder(tf.float32, shape=(None,n_classes))
+    baseline = tf.placeholder(tf.float32, shape=(num_step))
     keep_prob = tf.placeholder("float")
     is_train = tf.placeholder(tf.int32)
     batch_cnt = tf.Variable(0, trainable=False)
@@ -583,9 +583,10 @@ def train_net(dataset_path = '/raid/mainak/datasets/nabirds/', image_path = 'ima
     optimizer = tf.train.RMSPropOptimizer(learning_rate, decay = 0.98)
     saver = tf.train.Saver()
     sess = tf.Session()
-    class_cost, locs_cost, reward, accuracy, loc_mean, train_ops, preds, grads_1b, baseline_ = build_net(x, y_, keep_prob, optimizer, learning_rate, batch_cnt, sess)
-    baseline_arr = tf.pack(baseline_)
+    class_cost, locs_cost, reward, accuracy, loc_mean, train_ops, preds, grads_1b, baseline_arr = build_net(x, y_, keep_prob, optimizer, learning_rate, batch_cnt, sess, baseline)
+    #baseline_arr = tf.pack(baseline_)
 
+    init_base = np.zeros((num_step), dtype=np.float32)
 
     # print len(train_ops)
     # print train_ops[-1]
@@ -620,15 +621,16 @@ def train_net(dataset_path = '/raid/mainak/datasets/nabirds/', image_path = 'ima
                 batch_y = np.zeros((batch_size, n_classes))
                 batch_y[np.arange(batch_size), np.int32(batch_y_)-1] = 1
                 batch = [batch_x, batch_y]
-                feed_dict={x:batch[0], y_:batch[1],is_train:0, keep_prob:0.8}
+                base_in = init_base if (epoch==0 and minibatch_index==0) else baseline_v
+                feed_dict={x:batch[0], y_:batch[1],is_train:0, keep_prob:0.8, baseline: base_in}
 
                 class_cost_v, locs_cost_v, reward_v, accuracy_v, loc_mean_v, train_ops_v, preds_v, g1b_v, baseline_v = sess.run(fetches=[class_cost, locs_cost, reward, accuracy, loc_mean, train_ops[-1], preds, grads_1b[0], baseline_arr], feed_dict=feed_dict)
                 print ("Epoch: %d, minibatch_idx: %d, class cost: %g, locs_cost: %g, accuracy: %g"%(epoch, minibatch_index, class_cost_v, locs_cost_v, accuracy_v))
                 print "Reward: ", np.array_str(reward_v)
                 print "Locations: ", np.array_str(loc_mean_v[:,1,:])
-                # print "Grads: ", g1b_v
-                # print "Baseline: ", baseline_v
-                # print "Predicted Classes: ", preds_v
+                print "Grads: ", g1b_v
+                print "Baseline: ", baseline_v
+                #print "Predicted Classes: ", preds_v
             batch_cost.append(class_cost_v)    
             batch_accuracy.append(accuracy_v)    
             print("Epoch: %d, Train Bach Cost: %g, Train Batch Accuracy: %g"%(epoch, np.mean(batch_cost), np.mean(batch_accuracy)))
